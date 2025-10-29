@@ -15,5 +15,4 @@ public class Triangle24 {
             i++;
         }
     }
-
 }
