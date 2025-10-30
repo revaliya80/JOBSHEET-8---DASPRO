@@ -4,35 +4,25 @@ public class Jobsheet8Tugas2 {
     public static void main(String[] args) {
         Scanner sc = new Scanner(System.in);
 
-        System.out.print("Masukkan jumlah politeknik: ");
-        int jumlahPoltek = sc.nextInt();
-        sc.nextLine();
+        System.out.print("Masukkan Nilai N (minimal 3): ");
+        int N = sc.nextInt();
 
-        for (int p = 1; p <= jumlahPoltek; p++) {
-            System.out.println("\nPoliteknik ke-" + p);
-
-            System.out.println("Cabang: Badminton");
-            for (int i = 1; i <= 5; i++) {
-                System.out.print("Nama atlet ke-" + i + ": ");
-                String nama = sc.nextLine();
-            }
-            System.out.println("Cabang: Tenis Meja");
-            for (int i = 1; i <= 5; i++) {
-                System.out.print("Nama atlet ke-" + i + ": ");
-                String nama = sc.nextLine();
-            }
-            System.out.println("Cabang: Basket");
-            for (int i = 1; i <= 5; i++) {
-                System.out.print("Nama atlet ke-" + i + ": ");
-                String nama = sc.nextLine();
-            }
-            System.out.println("Cabang: Bola Voli");
-            for (int i = 1; i <= 5; i++) {
-                System.out.print("Nama atlet ke-" + i + ": ");
-                String nama = sc.nextLine();
-            }
+        for (int i = 1; i <= N; i++) {
+            System.out.print(N + " ");
         }
-        System.out.println("\nData semua atlet berhasil di masukkan!");
-        sc.close();
+        System.out.println();
+
+        for (int i = 1; i <= N - 2; i++) {
+            System.out.print(N + " ");
+            for (int j = 1; j <= N - 2; j++) {
+                System.out.print("  ");
+            }
+            System.out.println(N + " ");
+        }
+
+        for (int i = 1; i <= N; i++) {
+            System.out.print(N + " ");
+        }
+        System.out.println();
     }
 }
