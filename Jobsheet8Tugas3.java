@@ -14,7 +14,7 @@ public class Jobsheet8Tugas3 {
 
         for (int cabang = 1; cabang <= jumlahCabang; cabang++) {
             System.out.println("\nCabang " + cabang);
-            System.out.println("Jumlah pelanggan: ");
+            System.out.print("Jumlah pelanggan: ");
             int jumlahPelanggan = sc.nextInt();
 
             int totalItemCabang = 0;
