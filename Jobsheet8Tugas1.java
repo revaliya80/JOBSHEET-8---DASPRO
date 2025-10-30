@@ -4,25 +4,21 @@ public class Jobsheet8Tugas1 {
     public static void main(String[] args) {
         Scanner sc = new Scanner(System.in);
 
-        System.out.print("Masukkan Nilai N (minimal 3): ");
+        System.out.print("Masukkan nilai N: ");
         int N = sc.nextInt();
 
         for (int i = 1; i <= N; i++) {
-            System.out.print(N + " ");
-        }
-        System.out.println();
+            int jumlah = 0;
+            System.out.print("\nN =" + i + "-> jumlah kuadrat =");
 
-        for (int i = 1; i <= N - 2; i++) {
-            System.out.print(N + " ");
-            for (int j = 1; j <= N - 2; j++) {
-                System.out.print("  ");
+            for (int j = 1; j <= i; j++) {
+                jumlah += j * j;
+                System.out.print(j * j);
+                if (j < i) {
+                    System.out.print(" + ");
+                }
             }
-            System.out.println(N + " ");
+            System.out.print(" = " + jumlah);
         }
-
-        for (int i = 1; i <= N; i++) {
-            System.out.print(N + " ");
-        }
-        System.out.println();
     }
 }
